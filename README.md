@@ -1,3 +1,3 @@
 ### Hi there 👋
 
-<a href="home.html">cfaf</a>
+<a href="documentation.html">cfaf</a>
