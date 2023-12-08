@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Laravel учебник</title>
+    <link rel="stylesheet" href="/Style/style.css">
+    <script src="/js/html2pdf.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/Style/normalize.css">
+  </head>
+  <body>
+    <div class="header">
+      <div><img src="/img/laravel2.svg" alt="" class="logo"></div>
+      <div class="current-theme">
+        <span>Формы</span>
+      </div>
+    </div>
+    <div id="left-menu">
+      <ol>Настройка Laravel
+      <a href="/home.html"><li>Введение</li></a>
+      <a href="../laravel-settings/Documentation.html"><li>Документация</li></a>
+      <a href="../laravel-settings/Downoload.html"><li>Установка</li></a>
+      <a href="../laravel-settings/file-structure.html"><li>Файловая структура</li></a>
+      <a href="/laravel-settings/configuration.html"><li>Конфигурирование</li></a>
+      <a href="/laravel-settings/configuration-basedata.html"><li>Конфигурация базы данных</li></a>
+      <a href="/laravel-settings/debug-function.html"><li>Отладочные функции</li></a>
+      <a href="/laravel-settings/debugbar.html"><li>Панель debugbar</li></a>
+    </ol>
+      <ol class="ppp">Маршруты
+        <a href="/Routes/intro-routes.html"><li>Введение в маршруты</li></a>
+        <a href="/Routes/settings-routes.html"><li>Параматры маршрутов</li></a>
+        <a href="/Routes/some-routes.html"><li>Несколько параметров</li></a>
+        <a href="/Routes/optional-routes.html"> <li>Необязательные параметры</li></a>
+        <a href="/Routes/limited-settings.html"><li>Ограничения параметра</li></a>
+        <a href="/Routes/limited-some-routes.html"><li>Ограничения нескольких параметров</li></a>
+        <a href="/Routes/limited-template-routes.html"><li>Шаблонные Ограничения параметров</li></a>
+        <a href="/Routes/limited-global-routes.html"><li>Глобальные Ограничения параметров</li></a>
+        <a href="/Routes/conf-resolution.html"><li>Разрешение конфликтов маршрутов</li></a>
+        <a href="/Routes/group-routes.html"><li>Группировка маршрутов</li></a>
+        <a href="/Routes/name-routes.html"><li>Именованные маршруты</li></a>
+      </ol>
+      <ol class="ppp">Контроллеры
+        <a href="/controllers/intro.html"><li>Введение в контроллеры</li></a>
+        <a href="/controllers/routes-controllers.html"><li>Маршруты для контроллеров</li></a>
+        <a href="/controllers/gener-controllers.html"><li>Генерация контроллеров</li></a>
+        <a href="/controllers/routes-settings.html"><li>Параметры маршрутов</li></a>
+        <a href="/controllers/use-settings.html"><li>Применение параметров маршрутов</li></a>
+      </ol>
+      <ol class="ppp">Представления
+        <a href="/presentation/present-intro.html"><li>Введение в Представления</li></a>
+        <a href="/presentation/data-trans.html"><li>Передача данных</li></a>
+        <a href="/presentation/file-structure.html"><li>Структура файлов</li></a>
+        <a href="/presentation/site-maket.html"><li>Макет сайта</li></a>
+        <a href="/presentation/maket-content.html"><li>Контент в макете сайта</li></a>
+        <a href="/presentation/maket-title.html"><li>Тайтл в макете сайта</li></a>
+        <a href="/presentation/content-perem.html"><li>Контент из переменной</li></a>
+        <a href="/presentation/title-perem.html"><li>Тайтл из переменной</li></a>
+      </ol>
+      <ol class="ppp">Blade
+        <a href="/blade/blade-intro.html"><li>Введение</li></a>
+        <a href="/blade/perem-output.html"><li>Вывод переменных в тегах</li></a>
+        <a href="/blade/output-atrib.html"><li>Вывод переменных в атрибуты</li></a>
+        <a href="/blade/complete-cod.html"><li>Произвольный код</li></a>
+       <a href="/blade/massiv-blade.html"> <li>Работа с массивами</li></a>
+        <a href="/blade/check-perem.html"><li>Проверка переменных</li></a>
+        <a href="/blade/neekran-output.html"><li>Вывод неэкранированных данных</li></a>
+        <a href="/blade/blade-comment.html"><li>Комментарии</li></a>
+        <a href="/blade/blade-uslov.html"><li>Условия</li></a>
+        <a href="/blade/direct-else.html"><li>Директива @else</li></a>
+        <a href="/blade/direct-elseif.html"><li>Директива @elseif</li></a>
+        <a href="/blade/unless-direct.html"><li>Директива @unless</li></a>
+        <a href="/blade/hard-command.html"><li>Сложные Условия</li></a>
+        <a href="/blade/direct-foreach.html"><li>Директива @foreach</li></a>
+        <a href="/blade/key-foreach.html"><li>Ключи массива в цикле @foreach</li></a>
+        <a href="/blade/cycle-foreach.html"><li>Условия и циклы @foreach</li></a>
+        <a href="/blade/nested-loops.html"><li>Вложенные циклы @foreach</li></a>
+        <a href="/blade/multi-massiv.html"><li>Перебор многомерных массивов</li></a>
+        <a href="/blade/cycle-forelse.html"><li>Цикл @forelse</li></a>
+        <a href="/blade/perem-loop.html"><li>Переменная $loop</li></a>
+        <a href="/blade/direct-break.html"><li>Директива @break</li></a>
+        <a href="/blade/direct-continue.html"><li>Директива @continue</li></a>
+        <a href="/blade/cycle-for.html"><li>Цикл @for</li></a>
+        <a href="/blade/php-code.html"><li>Блок PHP кода</li></a>
+        <a href="/blade/praktika-blade.html"><li>Практика по шаблонизаору Blade</li></a>
+      </ol>
+      <ol class="ppp">Коллекции
+        <a href="/collections/collections.html"><li>Работа с Коллекциями</li></a>
+      </ol>
+      <ol class="ppp">Миграции
+        <a href="/migration/migration-intro.html"><li>Введение в миграции</li></a>
+        <a href="/migration/migr-file-structure.html"><li>Структура файлов миграций</li></a>
+        <a href="/migration/migrations-start.html"><li>Запуск миграций</li></a>
+        <a href="/migration/pole-table.html"><li>Поля таблиц</li></a>
+        <a href="/migration/new-pole.html"><li>Добавление полей</li></a>
+        <a href="/migration/change-pole.html"><li>Подготовка к изменению полей</li></a>
+        <a href="/migration/change-atrib.html"><li>Изменение атрибутов полей</li></a>
+        <a href="/migration/delete-pole.html"><li>Удаление полей</li></a>
+        <a href="/migration/change-name.html"><li>Переименование полей</li></a>
+        <a href="/migration/modif-pole.html"><li>Модификаторы полей</li></a>
+        <a href="/migration/poryadok-pole.html"><li>Порядок полей</li></a>
+        <a href="delete-table.html"><li>Удаление таблиц</li></a>
+        <a href="/migration/rename-table.html"><li>Переименование таблиц</li></a>
+        <a href="/migration/otkat-migr.html"><li>Подготовка к откату миграций</li></a>
+        <a href="/migration/otkat-migr2.html"><li>Откат миграций</li></a>
+        <a href="/migration/migr-index.html"><li>Создание индексов</li></a>
+        <a href="/migration/prinud-migr.html"><li>Принудительные миграции в продакшене</li></a>
+      </ol>
+      <ol class="ppp">Сидеры
+        <a href="/siders/siders-intro.html"><li>Введение</li></a>
+        <a href="/siders/fill-table.html"><li>Заполнение таблиц</li></a>
+        <a href="/siders/gener-random-strok.html"><li>Генерация случайных строк</li></a>
+        <a href="/siders/gener-part-strok.html"><li>Генерация части строки</li></a>
+        <a href="/siders/password-hash.html"><li>Хеширование паролей</li></a>
+        <a href="/siders/siders-class.html"><li>Отдельные классы сидеров</li></a>
+        <a href="/siders/call-siders.html"><li>Общий вызов отдельных сидеров</li></a>
+        <a href="/siders/rebulid.html"><li>Полное перестроение БД</li></a>
+        <a href="/siders/test-table.html"><li>Тестовые таблицы</li></a>
+      </ol>
+      <ol class="ppp">Построитель запросов
+        <a href="/zapros/zapros-intro.html"><li>Введение</li></a>
+        <a href="/zapros/get-zapis.html"><li>Получение всех записей</li></a>
+        <a href="/zapros/vivod-zapis.html"><li>Вывод полученных записей в представлении</li></a>
+        <a href="/zapros/sql-zapros.html"><li>Просмотр SQL запросов</li></a>
+        <a href="/zapros/pole-viborki.html"><li>Поля выборки</li></a>
+        <a href="/zapros/usl-where.html"><li>Условия where при выборке</li></a>
+        <a href="/zapros/some-usl-where.html"><li>Несколько условий where при выборке</li></a>
+        <a href="/zapros/usl-orwhere.html"><li>Условия orWhere при выборке</li></a>
+        <a href="/zapros/get-one-strock.html"><li>Сложные условия при выборке</li></a>
+        <a href="/zapros/get-one-strock.html"><li>Получение одной строки</li></a>
+        <a href="/zapros/get-one-znach.html"><li>Получение значения столбца</li></a>
+        <a href="/zapros/get-collect.html"><li>Получение коллекции значений столбца</li></a>
+        <a href="/zapros/where-between.html"><li>Условие whereBetween</li></a>
+        <a href="/zapros/where-in.html"><li>Условие whereln</li></a>
+        <a href="/zapros/null-check.html"><li>Проверка на NULL</li></a>
+        <a href="/zapros/dynamik-usl.html"><li>Динамические условия</li></a>
+        <a href="/zapros/comb-dinamik-usl.html"><li>Комбинация динамических условий</li></a>
+        <a href="/zapros/sort-dan.html"><li>Сортировка данных</li></a>
+        <a href="/zapros/sort-date.html"><li>Сортировка по дате</li></a>
+        <a href="/zapros/rand-sort.html"><li>Случайная сортировка</li></a>
+        <a href="/zapros/kol-zapis.html"><li>Количество записей в выброрке</li></a>
+        <a href="/zapros/sdvig.html"><li>Сдвиг при выборке</li></a>
+        <a href="/zapros/paste-dan.html"><li>Вставка данных</li></a>
+        <a href="/zapros/upload-dan.html"><li>Обновление данных</li></a>
+        <a href="/zapros/inkrement.html"><li>Инкремент и декремент данных</li></a>
+        <a href="/zapros/delete-dan.html"><li>Удаление данных</li></a>
+        <a href="/zapros/conjoin-table.html"><li>Соеденение таблиц</li></a>
+      </ol>
+      <ol class="ppp">Eloquent
+        <a href="/eloquent/eloquent-intro.html"><li>Введение в Eloquent</li></a>
+        <a href="/eloquent/gener-model.html"><li>Генерация моделей</li></a>
+        <a href="/eloquent/plug-model.html"><li>Подключение модели к контроллеру</li></a>
+        <a href="/eloquent/get-dan.html"><li>Получение данных из моделей</li></a>
+        <a href="/eloquent/build-zapros.html"><li>Конструктор запросов в моделях</li></a>
+        <a href="/eloquent/get-one-zapis.html"><li>Получение одной записи в моделях</li></a>
+        <a href="/eloquent/get-one-zapis2.html"><li>Получение одной записи по id</li></a>
+        <a href="/eloquent/create-new-zapis.html"><li>Создание новой записи</li></a>
+        <a href="/eloquent/change-zapis.html"><li>Изменение записи</li></a>
+        <a href="/eloquent/delete-zapis.html"><li>Удалеие записей</li></a>
+        <a href="/eloquent/delete-zapis2.html"><li>Удаление записей по id</li></a>
+        <a href="/eloquent/soft-delete.html"><li>Мягкое удаление</li></a>
+      </ol>
+      <ol class="ppp">Связывание моделей
+        <a href="/rope-model/rope-intro.html"><li>Введение</li></a>
+        <li>Связь один к одному</li>
+        <a href="/rope-model/get-dan-connect.html"><li>Получение данных связь один к одному</li></a>
+        <a href="/rope-model/perebor-zapis.html"><li>Перебор записей со связью один к одному</li></a>
+        <a href="/rope-model/obr-odin-k-odnomu.html"><li>Обратная связь один к одному</li></a>
+        <li>Связь один ко многим</li>
+        <li>Получение данных связь один ко многим</li>
+        <li>Условия связи один ко многим</li>
+        <a href="/rope-model/obr-odin-k-mnogim.html"><li>Обратная связь один ко многим</li></a>
+        <li>Несколько обратных связей один ко многим</li>
+        <li>Связь многие ко многим</li>
+        <a href="/rope-model/lazy-downoload.html"><li>Ленивая и жадная загрузка</li></a>
+        <li>Жадная загрузка множественных отношений</li>
+        <a href="/rope-model/hungry-loading.html"><li>Жадная загрузка по умолчанию</li></a>
+        <a href="/rope-model/documentation.html"><li>Документация</li></a>
+      </ol>
+      <ol class="ppp">Формы
+        <li>Объект Request</li>
+        <a href="/forms/send-get.html"><li>Отправка форм методом GET</li></a>
+        <a href="/forms/send-post.html"><li>Отправка форм методом POST</li></a>
+        <a href="/forms/form-and-obr.html"><li>Форма и её обработка в одном действии</li></a>
+        <a href="/forms/form-in-mass.html"><li>Данные формы в виде массива</li></a>
+        <a href="/forms/get-part-dan.html"><li>Получение части данных формы</li></a>
+        <a href="/forms/delete-part-dan.html"><li>Исключение части данных формы</li></a>
+        <a href="/forms/hard-name.html"><li>Сложные имена полей в формах</li></a>
+        <a href="/forms/vned-zavis.html"><li>Внедрение зависимости и параметры маршрута</li></a>
+        <a href="/forms/metod-object.html"><li>Методы объекта Request</li></a>
+      </ol>
+      <ol class="ppp">Пагинация
+        <a href="/pagination/pagination.html"><li>Пагинация</li></a>
+      </ol>
+      <ol class="ppp">CRUD операции
+        <a href="/CRUD/Crud.html"><li>Практика на CRUD</li></a>
+      </ol >
+      <ol class="ppp">URL
+        <a href="/URL/url.html"><li>Генерация URL</li></a>
+      </ol> 
+      <ol class="ppp">Компоненты
+        <a href="/components/comp-in-maket.html"><li>Компоненты в макете сайта</li></a>
+        <a href="/components/vinos-comp.html"><li>Внесение компонентов в файлы</li></a>
+        <a href="/components/podpapka.html"><li>Размещение компонентов в подпапках</li></a>
+        <a href="/components/component-name.html"><li>Имена компонентов из нескольких слов</li></a>
+        <a href="/components/vkl-comp.html"><li>Подключение компонентов к компонентам</li></a>
+        <a href="/components/slot-comp.html"><li>Слоты компонентов</li></a>
+        <a href="/components/dop-slot-comp.html"><li>Дополнительные слоты компонентов</li></a>
+        <a href="/components/maket-site.html"><li>Макет сайта как компонент</li></a>
+        <a href="/components/class-comp.html"><li>Класс компонента</li></a>
+        <a href="/components/data-give.html"><li>Передача данных в представлении компонента</li></a>
+        <a href="/components/data-give-bd.html"><li>Получение данных из БД в компоненте</li></a>
+        <a href="/components/gener-comp.html"><li>Генерация компонентов</li></a>
+        <a href="/components/give-data.html"><li>Передача данных в классы компонентов</li></a>
+        <a href="/components/give-znach.html"><li>Передача значений переменных в классы компонентов</li></a>
+        <a href="/components/give-atrib.html"><li>Передача обычных атрибутовв компоненты</li></a>
+      </ol>
+      <ol class="ppp">Сессии
+        <a href="/sessions/intro.html"><li>Введение в сессии</li></a>
+        <a href="/sessions/down-and-get.html"><li>Установка и получение переменных сессии</li></a>
+        <a href="/sessions/default-value.html"><li>Значения по умолчанию переменных сессии</li></a>
+        <a href="/sessions/delete-dan.html"><li>Удаление данных из сессии</li></a>
+        <a href="/sessions/get-dan.html"><li>Получение всех данных сессии</li></a>
+        <a href="/sessions/su-perem.html"><li>Существование переменной сессии</li></a>
+        <a href="/sessions/write-mass.html"><li>Запись массивов в сессии</li></a>
+        <a href="/sessions/work-session.html"><li>Работа с сессиями через глобальную функцию</li></a>
+      </ol>
+      <ol class="ppp">Редиректы
+        <a href="/redirekt/intro.html"><li>Введение в редиректы</li></a>
+        <a href="/redirekt/zada-deystvie.html"><li>Редирект на заданное действие контроллера</li></a>
+        <a href="/redirekt/name-route.html"><li>Редирект на именованные маршруты</li></a>
+        <a href="/redirekt/redirekt-name-route.html"><li>Редирект на именованные маршруты с параметрами</li></a>
+      </ol>
+      <ol class="ppp">Объект ответа
+        <a href="/object-answer/intro.html"><li>Введение в обЪект ответа</li></a>
+        <a href="/object-answer/help-function.html"><li>Вспомогательная функция ответа</li></a>
+        <a href="/object-answer/content-title.html"><li>Заголовки ответа</li></a>
+        <a href="/object-answer/give-predst.html"><li>Отдача представления в качестве отклика</li></a>
+      </ol>
+      <ol class="ppp">Куки
+        <a href="/cookies/intro.html"><li>Работа с кукамии</li></a>
+        <a href="/cookies/add-cookies.html"><li>Добавление куки в очередь</li></a>
+        <a href="/cookies/cookies-pred-title.html"><li>Куки, представленияи и заголовки</li></a>
+      </ol>
+      <ol class="ppp">Flash
+        <a href="/flash/intro.html"><li>Флеш сообщения</li></a>
+        <a href="/flash/data-back-zapros.html"><li>Данные предыдущего запроса</li></a>
+      </ol>
+      <ol class="ppp">Валидация
+        <a href="/validation/intro.html"><li>Валидация форм</li></a>
+      </ol>
+      <ol class="ppp">Посредники
+      <a href="/posrednik/intro.html">  <li>Посредники</li></a>
+      </ol>
+      <ol class="ppp">Локализация
+        <a href="/localization/intro.html"><li>Локализация</li></a>
+      </ol>
+      <ol class="ppp">Авторизация
+        <a href="/login/intro.html"><li>Авторизация</li></a>
+      </ol>
+      <ol class="ppp">Проекты
+        <a href="/projects/interesting-stories.html"><li>Интересные истории</li></a>
+        <a href="/projects/bulletin-board.html"><li>Доска объявлений</li></a>
+        <a href="/projects/forum.html"><li>Форум</li></a>
+      </ol>
+    </div>
+    <div id="content"><div id="invoice">
+
+      <span class="text">
+        <span style="margin-left: 20%; font-size: 40px;"><b>Отправка форм методом POST в Laravel</b></span><br><br>
+        
+        Давайте теперь научимся отправлять формы методом POST. Внесем необходимые изменения. Для начала в роуте, отвечающем за обработку формы, поменяем метод get на метод post: <br>
+
+        Для начала сделаем два роута. Первый роут для показа формы: <br>
+        <p class="code">< ?php</p>
+        <p class="code">Route::post('/result', [PostController::class, 'result']);</p>
+        <p class="code">?></p> <br>
+        Теперь в форме добавим атрибут method со значением POST: <br>
+        <p class="code">< form action="/result" method="post"></p>
+        <p class="code">< input name="title"></p>
+        <p class="code">< input name="slug"></p>
+        <p class="code">< input type="submit"></p>
+            <p class="code"></ form></p> <br>
+            Далее по правилам Laravel нам необходимо добавить защиту от CSRF атаки. Технически мы должны в нашу форму добавить специальный скрытый инпут, содержащий секретную строку (токен). <br>
+
+            На практике нам просто нужно вставить специальную команду Blade: <br>
+            <p class="code">< form action="/result" method="post"></p>
+            <p class="code">@csrf</p>
+            <p class="code">< input name="title"></p>
+            <p class="code">< input name="slug"></p>
+            <p class="code">< input type="submit"></p>
+                <p class="code"></ form></p> <br>
+                Это все изменения. Наш контроллер останется неизменным:  <br>
+            Данные формы можно получить с помощью метода input объекта запроса. Параметром этот метод принимает имя инпута. Давайте получим и выведем отправленные данные: <br>
+            <p class="code">< ?php</p>
+            <p class="code">public function result(Request $request)</p>
+            <p class="code">{</p>
+            <p class="code">	dump($request->input('title'));</p>
+            <p class="code">dump($request->input('slug'));</p>
+            <p class="code">}</p>
+            <p class="code">?></p><br>
+            А теперь передадим данные нашей формы в представление: <br>
+            <p class="code">< ?php</p>
+            <p class="code">public function result(Request $request)</p>
+            <p class="code">{</p>
+            <p class="code">	dump($request->input('title'));</p>
+            <p class="code">dump($request->input('slug'));</p>
+            <p class="code">return view('post.result', [</p>
+            <p class="code">'title' => $title, 'slug' => $slug</p>
+            <p class="code">]);</p>
+            <p class="code">}</p>
+            <p class="code">?></p><br>
+            В представлении метода result выведем переданные переменные: <br>
+            <p class="code">< h1>{{ $title }}< /h1></p>
+            <p class="code">< p>{{ $slug }}< /p></p><br></div>
+        <div class="file-tasks12">
+            №1<br>Сделайте форму, которая будет спрашивать имя, возраст и зарплату юзера. Отправьте эту форму методом POST.  </div>  </span>
+    <a href="/forms/form-and-obr.html"><div class="button-next"></div></a>
+    <button id="download-button">Скачать как PDF</button>
+    <div id="footer13" >
+      <span class="footer-intro">Сделано Александром Зориным <br>2023 <br></span>
+    </div>
+
+    <script src="/js/pdf.js"></script>
+    
+  </body>
+</html>
